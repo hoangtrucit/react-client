@@ -1,0 +1,30 @@
+@import "../../assets/scss/variables";
+
+.wrapper {
+  background: $wrapper-bg;
+  padding-top: 50px;
+  min-height: 100%;
+  .menu-bar {
+    display: none;
+    margin-bottom: 10px;
+    a {
+      margin-top: 10px;
+      padding: 6px 20px;
+      background: #EEEEEE;
+      color: #333333;
+      border-radius: 6px;
+      font-size: 14px;
+      &:focus, &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  @media (max-width: 779px) {
+    margin-left: 0px;
+    .menu-bar {
+      display: block;
+    }
+  }
+  margin-left: 230px;
+  padding-bottom: 20px;
+}

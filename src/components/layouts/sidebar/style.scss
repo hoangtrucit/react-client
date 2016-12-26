@@ -1,0 +1,117 @@
+@import "../../../assets/scss/variables";
+
+.wrapper-sidebar {
+  -webkit-transition: all .6s linear;
+  -moz-transition: all .6s linear;
+  -ms-transition: all .6s linear;
+  -o-transition: all .6s linear;
+  transition: all .6s linear;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  position: fixed;
+  top: 44.5px;
+  overflow-y: scroll;
+  @media (max-width: 779px) {
+    display: none;
+    margin-left: -180px;
+  }
+  width: 230px;
+  background: $sidebar-bg;
+  float: left;
+  height: 100%;
+  font-size: 14px;
+  .menu-option {
+    padding: 0px 15px;
+    margin-top: 10px;
+    .option-name {
+      position: relative;
+      .line {
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        background: darken($sidebar-bg, 4);
+        z-index: 0;
+      }
+      .name {
+        position: relative;
+        z-index: 1;
+        background: $sidebar-bg;
+        padding-right: 5px;
+        font-size: 12px;
+        color: rgba(0,0,0,.5);
+      }
+    }
+    .lists {
+      padding-left: 0px;
+      margin-bottom: 0px;
+      margin-top: 5px;
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        &.active {
+          a {
+            opacity: 1;
+            background: darken($sidebar-bg, 4);
+            color: darken($sidebar-nav-a-color, 10);
+            //background: darken(#fafafa, 3)
+          }
+        }
+        a {
+          color: $sidebar-nav-a-color;
+          display: block;
+          padding: 10px 20px;
+          background: transparent;
+          border-radius: 3px;
+          -webkit-transition: background-color 0.28s 0s linear;
+          -moz-transition: background-color 0.28s 0s linear;
+          -ms-transition: background-color 0.28s 0s linear;
+          -o-transition: background-color 0.28s 0s linear;
+          transition: background-color 0.28s 0s linear;
+          &:hover, &:focus {
+            text-decoration: none;
+            background: #ededed;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-lists {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    &.active {
+      a {
+        opacity: 1;
+        background: darken(#fafafa, 3)
+      }
+    }
+    a {
+      color: #333333;
+      display: block;
+      opacity: .5;
+      padding: 10px 20px;
+      background: transparent;
+      border-radius: 3px;
+      -webkit-transition: background-color 0.28s 0s linear;
+      -moz-transition: background-color 0.28s 0s linear;
+      -ms-transition: background-color 0.28s 0s linear;
+      -o-transition: background-color 0.28s 0s linear;
+      transition: background-color 0.28s 0s linear;
+      &:hover, &:focus {
+        text-decoration: none;
+        background: #ededed;
+      }
+    }
+  }
+}
+
+@media (max-width: 779px) {
+  .show-sidebar .sidebar {
+    display: block;
+    margin-left: 0px;
+  }
+}

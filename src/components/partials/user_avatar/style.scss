@@ -1,0 +1,80 @@
+.tt-user-avatar-component {
+  //flex: 2;
+  display: flex;
+  align-items: center;
+  .tt-avatar-component {
+    width: 30px;
+  }
+  .information {
+    margin-left: 10px;
+    .name {
+      font-size: 13px;
+      font-weight: 700;
+      color: lighten(#333333, 15);
+    }
+    .name-label {
+      font-size: 12px;
+      color: darken(#d4d4d4, 10);
+      font-weight: 400;
+    }
+  }
+  &.size-20 {
+    .tt-avatar-component {
+      width: 20px;
+      height: 20px;
+      img{
+        margin-top: -4px;
+      }
+    }
+    .information {
+      margin-left: 5px;
+      .name-label {
+        margin-top: -2px;
+      }
+    }
+  }
+  &.size-25 {
+    .tt-avatar-component {
+      width: 25px;
+      height: 25px;
+    }
+    .information {
+      .name-label {
+        margin-top: -2px;
+      }
+    }
+  }
+  &.size-70 {
+    .tt-avatar-component {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      img {
+        border-radius: 35px;
+      }
+    }
+    .name-label {
+      font-size: 14px;
+    }
+    .name {
+      font-size: 20px;
+    }
+    .avatar-component .character {
+      font-size: 35px;
+    }
+  }
+  &.text-white {
+    .name {
+      color: #FFFFFF;
+    }
+    .name-label {
+      color: darken(#ffffff, 10);
+    }
+  }
+}
+
+a.tt-user-avatar-component{
+  &:hover{
+    text-decoration: none;
+  }
+}

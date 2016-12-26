@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Bookerly;
+  font-weight: 400;
+  src: url(../fonts/Bookerly-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bookerly;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/Bookerly-RegularItalic.ttf);
+}
+
+@font-face {
+  font-family: Bookerly;
+  font-weight: 600;
+  src: url(../fonts/Bookerly-Bold.ttf);
+}
+
+@font-face {
+  font-family: Bookerly;
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/Bookerly-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Tungtung;
+  font-weight: 400;
+  src: url(../fonts/Tungtung.ttf);
+}
+
+.font-size-14{
+  font-size: 14px;
+}
+
+.font-size-16{
+  font-size: 16px;
+}
+
+.font-size-18{
+  font-size: 18px;
+}

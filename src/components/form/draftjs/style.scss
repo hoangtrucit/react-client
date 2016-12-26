@@ -1,0 +1,57 @@
+/* TeXEditor full */
+.tt-draftjs-editor-full {
+  position: relative;
+  margin-top: 15px;
+  & > .border {
+    border: 1px solid #eeeeee;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+  }
+  .write, .read {
+    float: left;
+    width: 100%;
+  }
+  .read {
+    display: none;
+  }
+}
+
+.tt-draftjs-editor-full.have-read {
+  .write, .read {
+    width: 50%;
+  }
+  .write {
+    padding-right: 5px;
+    border-right: 1px solid #eeeeee;
+  }
+  .read {
+    opacity: 1;
+    display: block;
+    margin-right: 0px;
+    padding-left: 5px;
+    .CodeMirror-sizer {
+      margin-left: 30px !important;
+    }
+    .CodeMirror-gutter-wrapper {
+      left: -30px !important;
+    }
+    .CodeMirror-gutter.CodeMirror-linenumbers {
+      width: 29px;
+    }
+  }
+}
+
+.tt-draftjs-editor-full.read-only {
+  margin-top: 0px;
+  .read {
+    width: 100%;
+  }
+  .public-DraftEditor-content > div {
+    & > div:last-child, & > div:first-child {
+      br {
+        display: none;
+      }
+    }
+  }
+}
